@@ -92,14 +92,150 @@
   display: flex;
   justify-content: start;
   align-items: start;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% darkness */
 }
 
 .banner h1 {
-  color: #fcfcfcfc;
+  color: #f9f8f8fc;
   font-weight: bolder;
   opacity: 1;
   width: 554px;
   font-size: 45px;
   margin-top: 70px;
-  margin-left: 335px;
+  margin-left: 350px;
+  z-index: 1;
+}
+
+/* search bar style */
+
+.search {
+  display: flex;
+  height: 126px;
+  width: 1216px;
+  border: 1px solid #ebe9e9;
+  position: absolute;
+  bottom: -20%;
+  left: 20%;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  gap: -10px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+.option-source select {
+  border: none;
+  padding: 20px;
+  width: 225px;
+  /* border: none; */
+  background: #ffffff;
+}
+
+.option-source {
+  border: 1px solid gray;
+  background: #ffffff;
+}
+
+.option-destination select {
+  border: none;
+  padding: 20px;
+  width: 225px;
+  background: #ffffff;
+}
+
+.option-destination {
+  border: 1px solid gray;
+  background: #ffffff;
+}
+
+.search-date input {
+  border: none;
+  padding: 19px;
+  width: 220px;
+  background: #ffffff;
+}
+
+.search-date {
+  border: 1px solid gray;
+  width: 420px;
+  background: #ffffff;
+}
+
+.for-women {
+  border: 1px solid gray;
+  padding: 10px;
+  width: 250px;
+  margin-left: 10px;
+}
+
+.chkbox {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.today {
+  background: rgb(201, 200, 200);
+  padding: 15px;
+  border-radius: 70px;
+}
+
+.tomorrow {
+  background: #dcbbbb;
+  padding: 15px;
+  border-radius: 70px;
+}
+
+.today:hover {
+  cursor: pointer;
+}
+
+.tomorrow:hover {
+  cursor: pointer;
+  background: #e8bfbf;
+}
+
+.search-date input:hover {
+  cursor: pointer;
+}
+
+.option-source select:hover {
+  cursor: pointer;
+}
+
+.option-destination select:hover {
+  cursor: pointer;
+}
+
+.child-search {
+  padding: 20px;
+  width: 18.75rem;
+  background: #d01f27;
+
+  color: #fdfdfd;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  border: none;
+  z-index: 1;
+}
+
+.child-search:hover {
+  cursor: pointer;
+  background: #d63941;
 }
