@@ -83,4 +83,23 @@
 
 /* style banner */
 .banner {
+  height: 280px;
+  width: 100%;
+  background-image: url("https://s3.rdbuz.com/Images/responsiveweb/HomeBanner.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.banner h1 {
+  color: #fcfcfcfc;
+  font-weight: bolder;
+  opacity: 1;
+  width: 554px;
+  font-size: 45px;
+  margin-top: 70px;
+  margin-left: 335px;
 }
