@@ -18,6 +18,14 @@
 .header {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  background: #ffff;
+  /* z-index: 1000; */
+}
+
+.main {
+  overflow-y: auto;
 }
 
 /* Style nav */
@@ -407,6 +415,10 @@
   padding: 16px;
   border-radius: 5px;
   gap: 1rem;
+  background: #ffff;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.078),
+    0 4px 8px rgba(0, 0, 0, 0.078);
 }
 
 .offer-card-1 {
@@ -468,5 +480,53 @@
 }
 
 .offer-card-getOffer-btn:hover {
+  cursor: pointer;
+}
+
+/*  Style What`s New Section */
+
+.whats-new {
+  height: 228px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 130px 316px;
+}
+
+.whats-new-child-1 {
+  height: 28px;
+  width: 1216px;
+  padding: 16px 12px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 75px;
+}
+
+whats-new-child-1,
+h4 {
+  font-size: 22px;
+}
+
+.whats-new-child-2 {
+  height: 176px;
+  width: 1248px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: start;
+  gap: 0.7rem;
+  margin: 10px 75px;
+}
+
+.whats-new-child-2-card div img {
+  box-sizing: border-box;
+  height: 160px;
+  width: 296px;
+  border-radius: 16px;
+  background: #ffff;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.078),
+    0 4px 8px rgba(0, 0, 0, 0.078);
   cursor: pointer;
 }
