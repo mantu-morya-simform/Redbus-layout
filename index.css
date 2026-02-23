@@ -219,10 +219,10 @@
 }
 
 .child-search {
-  padding: 20px;
+  /* padding: 20px; */
+  height: 48px;
   width: 18.75rem;
   background: #d01f27;
-
   color: #fdfdfd;
   font-size: 16px;
   font-weight: bold;
@@ -238,4 +238,89 @@
 .child-search:hover {
   cursor: pointer;
   background: #d63941;
+}
+
+/* Style for Festivals Card */
+
+.festivals {
+  height: 206px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 130px 316px;
+}
+
+.festivals-headder {
+  height: 48px;
+  width: 1256px;
+  display: flex;
+  margin: 12px 70px;
+  gap: 0.75rem;
+}
+
+.festivals-main-card {
+  height: 134px;
+  width: 1216px;
+  margin: -20px 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.festivals-main-card-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.festivals-main-card-left-child-2,
+.festivals-main-card-left-child-3 {
+  height: 56px;
+  width: 183px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  align-items: center;
+  border: 1px solid;
+  border-color: rgb(237, 98, 19) rgb(237, 19, 150) rgb(141, 50, 233);
+  border-radius: 12px;
+}
+.festivals-main-card-left-child-3 {
+  border-color: rgb(24, 20, 219);
+}
+
+.festivals-main-card-right {
+  height: 84px;
+  width: 218px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  margin-right: 30px;
+  gap: 0.75rem;
+}
+
+.festivals-main-card-right-child button {
+  height: 40px;
+  width: 218px;
+  padding: 0px 12px;
+  background: light-dark(#fed9d5, #622726);
+  border: none;
+  border-radius: 999px;
+  color: #1d1d1d;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 1rem;
+}
+
+.festivals-main-card-right-child button:hover {
+  cursor: pointer;
+  background: light-dark(#e0c7c4, #622726);
+}
+
+.festivals-main-card-left-child-2,
+.festivals-main-card-left-child-3 :hover {
+  cursor: auto;
 }
