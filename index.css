@@ -689,3 +689,80 @@ h4 {
   font-size: 12px;
   font-weight: bold;
 }
+
+/*  off-banner Section Style*/
+
+.off-banner {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.off-banner-child {
+  height: 340px;
+  /* margin-bottom: 15px; */
+  background-image: url("./resources/off-banner/bg-banner.webp");
+  /* padding: 56px; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 20px;
+}
+
+.off-banner-child::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.downloadAppSection {
+  height: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  color: #ffffff;
+}
+
+.downloadAppSection-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.downloadAppSection-right {
+  height: 228px;
+  width: 558px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.store-btn-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.store-btn-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-btn-top-child {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
