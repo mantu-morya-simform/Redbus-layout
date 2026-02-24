@@ -513,3 +513,108 @@ h4 {
     0 4px 8px rgba(0, 0, 0, 0.078);
   cursor: pointer;
 }
+
+/* Style Government Busesn Section */
+
+.government-buses {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.government-buses-child-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+whats-new-child-1,
+h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.government-buses-child-2 {
+  display: flex;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.government-buses-top-card {
+  box-sizing: border-box;
+  height: 245px;
+  width: 296px;
+  border-radius: 16px;
+  background: #ffff;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.078),
+    0 4px 8px rgba(0, 0, 0, 0.078);
+  cursor: pointer;
+}
+
+.bus-card-head {
+  height: 85px;
+  width: 296px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 16px;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.bus-card-head img {
+  height: 48px;
+  width: 48;
+  border-radius: 50%;
+}
+
+.bus-card-head div {
+  line-height: 1.5;
+}
+
+.bus-card-head p {
+  color: #1d1d1da3;
+}
+
+.bus-card-detail {
+  height: 112px;
+  width: 296px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  gap: 0.75rem;
+  line-height: 1.5;
+  padding: 16px;
+}
+
+.bus-card-detail p:first-child {
+  color: #1d1d1d;
+  font-size: 14px;
+}
+
+.bus-card-detail p:last-child {
+  color: #1d1d1d;
+  font-size: 12px;
+}
+
+.bus-card-offer {
+  height: 48px;
+  width: 296px;
+  padding: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fed9d5;
+  border-radius: 5px;
+}
+
+.bus-card-offer:hover {
+  background: #d8ada8;
+}
