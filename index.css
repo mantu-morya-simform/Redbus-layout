@@ -6,11 +6,11 @@
 }
 
 .container {
-  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 65px 1fr;
+  grid-template-rows: 65px 1fr auto;
+  min-height: 100vh;
 }
 
 /* Style Headder */
@@ -21,10 +21,6 @@
   background: #ffff;
   z-index: 1000;
   border-bottom: 1px solid #eee;
-}
-
-.main {
-  overflow-y: auto;
 }
 
 /* Style nav */
@@ -702,9 +698,7 @@ h4 {
 
 .off-banner-child {
   height: 340px;
-  /* margin-bottom: 15px; */
   background-image: url("./resources/off-banner/bg-banner.webp");
-  /* padding: 56px; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -735,6 +729,21 @@ h4 {
   align-items: start;
   gap: 1rem;
   z-index: 2;
+  line-height: 1.6;
+}
+
+.downloadAppSection-left p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.downloadAppSection-left div p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+.downloadAppSection-left div p:last-child {
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .downloadAppSection-right {
@@ -742,10 +751,12 @@ h4 {
   width: 558px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
   z-index: 2;
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
 }
 
 .store-btn-main {
@@ -765,4 +776,257 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: start;
+}
+
+/* Style About REdbus */
+
+.About-redbus {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.About-redbus-main-head {
+  font-size: 22px;
+  color: #1d1d1d;
+}
+
+.about-list-items h2 {
+  font-size: 21px;
+}
+
+.about-list-items {
+  font-size: 14px;
+}
+
+.about-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #1d1d1da3;
+}
+
+.about-list-items div ul {
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-list-items p {
+  line-height: 1.4;
+}
+
+/* Style booking-reddeals */
+
+.booking-reddeals {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.booking-reddeals div h2 {
+  padding: 12px 0;
+  font-size: 22px;
+}
+
+.booking-reddeals div p {
+  font-size: 14px;
+}
+
+.unbeatable-exclusive-reddeals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid rgb(228, 225, 225);
+  border-radius: 16px;
+}
+
+.unbeatable-exclusive-reddeals div p:first-child {
+  font-size: 14.4px;
+  font-weight: bold;
+}
+.unbeatable-exclusive-reddeals div p:last-child {
+  font-size: 12px;
+}
+
+.unbeatable-exclusive-reddeals-left div img {
+  margin-top: 15px;
+}
+
+.unbeatable-exclusive-reddeals-left {
+  display: flex;
+  gap: 1rem;
+  line-height: 1.6;
+  align-items: center;
+}
+
+.unbeatable-exclusive-reddeals-right button {
+  height: 48px;
+  width: 256px;
+  background: #d01f27;
+  color: #fdfdfd;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.unbeatable-exclusive-reddeals-right button:hover {
+  background: #c55b61;
+}
+
+/* Style faqs */
+
+.faqs {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqs-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: ceter;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.faqs-nav button {
+  height: 48px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  padding: 0px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 4px solid #ffffff;
+}
+
+.faqs-nav button:hover {
+  border-bottom: 4px solid #e90511;
+  color: red;
+  background: #ebeaea;
+}
+
+.faqs-accordian {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 12px;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.faqs-accordian h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d1d1d;
+  cursor: pointer;
+}
+.faqs-accordian div svg {
+  cursor: pointer;
+}
+
+/* Style Footer */
+
+.footer {
+  background: #f2f2f8;
+  border: 1px solid rgb(228, 225, 225);
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 30px auto 0;
+}
+
+.footer-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-redbus,
+.info,
+.global-sites,
+.our-partners {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-redbus h2,
+.info h2,
+.global-sites h2,
+.our-partners h2 {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.about-redbus a,
+.info a,
+.global-sites a,
+.our-partners a {
+  height: 48px;
+  padding: 0px 20px;
+  color: #4040f2;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.about-redbus a:hover,
+.info a:hover,
+.global-sites a:hover,
+.our-partners a:hover {
+  border-radius: 30px;
+  background: #dbe4ff;
+}
+
+.footer-about-app {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 56px 16px 24px;
+  border-bottom: 1px solid rgb(228, 225, 225);
+}
+
+.footer-about-app span {
+  font-size: 14px;
+  color: #1d1d1da3;
+}
+
+.copyright-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0px 16px;
+}
+
+.copyright-logo p {
+  font-size: 14px;
+  color: #1d1d1da3;
+}
+
+.copyright-logo div svg {
+  cursor: pointer;
 }
